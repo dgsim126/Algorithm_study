@@ -1,5 +1,5 @@
 def solution(dirs):
-    visited_path = set()
+    visited_path = list()
     x, y = 0, 0
 
     for direction in dirs:
@@ -16,11 +16,11 @@ def solution(dirs):
         ny = y + dy
 
         if -5 <= nx <= 5 and -5 <= ny <= 5:
-            path = ((x, y), (nx, ny))
-            r_path = ((nx, ny), (x, y)) # gpt
+            path = [[x, y], [nx, ny]]
+            r_path = [[nx, ny], [x, y]] # gpt
 
             if path not in visited_path and r_path not in visited_path:
-                visited_path.add(path)
+                visited_path.append(path)
 
             x = nx
             y = ny
