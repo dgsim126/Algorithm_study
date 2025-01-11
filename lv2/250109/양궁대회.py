@@ -1,10 +1,10 @@
-from itertools import combinations
+from itertools import product
 
 def solution(n, info):
     win = False
     answer = []
     target_list = [i for i in range(11)]
-    for combs in combinations(target_list, n):
+    for combs in product(target_list, repeat=n):
         list = [0 for i in range(11)]
         for i in combs:
             list[10-i] += 1
