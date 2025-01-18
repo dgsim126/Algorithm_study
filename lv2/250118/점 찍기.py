@@ -1,13 +1,13 @@
 # 역시나 시간초과
 def solution(k, d):
-    total_points = 0
+    answer = 0
 
     for x in range(0, d + 1, k):
         for y in range(0, d + 1, k):
             if x ** 2 + y ** 2 <= d ** 2:
-                total_points += 1
+                answer += 1
 
-    return total_points
+    return answer
 
 # 야무지다
 def solution(k, d):
