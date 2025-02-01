@@ -3,5 +3,13 @@ dic = {"apple": 3, "banana": 1, "cherry": 4, "date": 2}
 new_dic= dict(sorted(dic.items(), key=lambda item: item[1], reverse=True))
 
 
+# 완전탐색 문제에서 조합이 많이 사용되고 있음
+# from itertools import product 사용법 숙지할 것!
+
+
+숫자 변환하기 문제bfs
+
+
+
 # 무인도 여행 bfs
 # 호텔 대신 최소힙
