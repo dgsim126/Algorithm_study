@@ -54,9 +54,6 @@ def solution(board):
 
     return 1
 
-
-
-
 ## main ##
 board= ["OOO", "...", "XXX"]
 print(solution(board))
