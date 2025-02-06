@@ -8,3 +8,8 @@ new_dic= dict(sorted(dic.items(), key=lambda item: item[1], reverse=True))
 
 
 숫자 변환하기 문제bfs
+
+
+
+# 무인도 여행 bfs
+# 호텔 대신 최소힙
