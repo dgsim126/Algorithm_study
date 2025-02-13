@@ -28,8 +28,8 @@ def solution(picks, minerals):
 
         pick = available_picks[pick_i]  # 현재 곡괭이 선택
         pick_i += 1  # 다음 곡괭이로 이동
-
     # --------------------------------------
+
         for mineral in gm:
             if pick == "diamond":
                 pirodo = 1
